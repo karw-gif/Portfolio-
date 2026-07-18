@@ -1,48 +1,43 @@
-# 🌐 Joy Mwenda | Portfolio
+# Joy Mwenda - Streamlit Portfolio
 
-A modern personal portfolio showcasing my projects, technical skills, certifications, and experience in Artificial Intelligence, Cybersecurity, and Software Development.
+This is a beautiful, professional, and interactive portfolio application built using Streamlit and custom CSS styling.
 
-## Features
+## Portfolio Structure
 
-- 👤 Professional profile and introduction
-- 🛡️ AI & Cybersecurity focused branding
-- 💼 Featured projects with screenshots
-- 📄 Downloadable resume
-- 🏆 Certifications
-- 🛠️ Technical skills
-- 📱 Responsive design
-- 📧 Contact section
+```text
+portfolio/
+│
+├── app.py                  # Streamlit application entrypoint
+├── requirements.txt        # Application dependencies
+├── README.md               # Documentation
+│
+├── assets/                 # Profile, resume, and project screenshot assets
+│   ├── profile.jpg         # Profile picture
+│   ├── resume.pdf          # Professional Resume
+│   │
+│   ├── ai/                 # AI Intrusion Detector Screenshots
+│   │   ├── dashboard.png   # Simulator dashboard
+│   │   └── xai.png         # Explainable AI/Model Evaluation report
+│   │
+│   ├── novamedix/          # NovaMediX project assets
+│   │   └── mockup.png      # NovaMediX mobile app UI mockup
+│   │
+│   └── campusconnect/      # CampusConnect project assets
+│       └── mockup.png      # CampusConnect mobile app UI mockup
+│
+└── styles/
+    └── style.css           # Custom CSS styling for premium look & feel
+```
 
-## Featured Projects
+## How to Run
 
-### AI Integrated Smart Packet Analyzer
-An AI-powered intrusion detection system that captures live network traffic, extracts flow features, and uses machine learning to detect cyber threats in real time.
-
-**Tech Stack:** Python, Streamlit, XGBoost, NFStream, Scikit-learn
-
-### NovaMediX
-A Flutter-based telemedicine platform providing appointment booking, emergency assistance, accident reporting, and health monitoring.
-
-**Tech Stack:** Flutter, Dart
-
-### CampusConnect
-A Kotlin mobile application that keeps students informed through real-time campus events and push notifications.
-
-**Tech Stack:** Kotlin, Firebase Realtime Database, Firebase Cloud Messaging
-
-## Technologies Used
-
-- Python
-- Streamlit
-- Flutter
-- Kotlin
-- HTML
-- CSS
-- JavaScript
-- SQL
-- Git
-- Firebase
-
----
-
-⭐ Thank you for visiting my portfolio.
+1. Clone or copy this folder structure to your machine.
+2. Install the dependencies listed in `requirements.txt`:
+   ```bash
+   pip install -r requirements.txt
+   ```
+3. Run the Streamlit application:
+   ```bash
+   streamlit run app.py
+   ```
+4. Open the displayed URL in your browser to view the portfolio.
