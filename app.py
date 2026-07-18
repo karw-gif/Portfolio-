@@ -60,7 +60,7 @@ Hi, I'm Joy Mwenda 👋
     st.markdown("""
 <div class="hero-subtitle">
 
-Building intelligent software with AI and cybersecurity.
+AI | Cybersecurity | Software Development
 
 </div>
 """,unsafe_allow_html=True)
@@ -68,7 +68,7 @@ Building intelligent software with AI and cybersecurity.
     st.write("")
 
     st.markdown("""
-Final-year Computer Science student with experience developing AI-powered,
+With hands on experience in  developing AI-powered,
 cybersecurity, mobile, and web applications.
 
 I enjoy creating intelligent systems that solve real-world challenges through
@@ -125,9 +125,7 @@ About Me
 
 st.write("""
 
-I'm a final-year Computer Science student with hands-on experience in
-Artificial Intelligence, Cybersecurity, Mobile Development, and Software
-Engineering.
+I'm a final year Computer Science student specializing in Artificial Intelligence, Cybersecurity, and Software Development. I build intelligent applications that enhance security, automate processes, and solve real-world challenges using modern technologies.
 
 My interests lie in developing intelligent applications that improve
 security, automate processes, and solve real-world problems.
@@ -263,21 +261,24 @@ with tabs[1]:
 
 with tabs[2]:
 
-    st.subheader("📊 Live Simulator Dashboard")
+    st.subheader("AI Smart Packet Analyzer Screenshots")
 
-    st.image(
-        "assets/ai/dashboard.png",
-        use_container_width=True
-    )
+    col1, col2 = st.columns(2)
 
-    st.write("")
+    with col1:
+        st.image(
+            "assets/ai/dashboard.png",
+            caption="Main Dashboard",
+            use_container_width=True
+        )
 
-    st.subheader("📈 Model Evaluation & Explainable AI (XAI)")
-
-    st.image(
-        "assets/ai/xai.png",
-        use_container_width=True
-    )
+    with col2:
+        st.image(
+            "assets/ai/xai.png",
+            caption="Explainable AI",
+            use_container_width=True
+        )
+           
 with tabs[3]:
 
     st.subheader("Technologies Used")
@@ -350,9 +351,9 @@ github1, report = st.columns(2)
 with github1:
 
     st.link_button(
-        "💻 View GitHub Repository",
-        "YOUR_GITHUB_LINK"
-    )
+ "💻 View GitHub Repository",
+    "https://github.com/karw-gif/AI-Integrated-Smart-Packet-Analyzer-.git"
+)
 
 with report:
 
@@ -377,9 +378,16 @@ and health monitoring through a mobile application.
 </div>
 """, unsafe_allow_html=True)
 
-col1, col2 = st.columns([1,1])
+left, right = st.columns([1,1])
 
-with col1:
+with left:
+
+    st.image(
+        "assets/novamedix/mockup.png",
+        use_container_width=True
+    )
+
+with right:
 
     st.subheader("Key Features")
 
@@ -399,8 +407,6 @@ with col1:
 
 """)
 
-with col2:
-
     st.subheader("Technologies")
 
     st.markdown("""
@@ -417,17 +423,10 @@ with col2:
 
 """)
 
-st.link_button(
-    "💻 GitHub Repository",
-    "https://github.com/karw-gif/NovaMedix-.git"
-)
-
-st.write("")
-st.image(
-    "assets/novamedix/mockup.png",
-    caption="NovaMediX Platform Preview",
-    use_container_width=True
-)
+    st.link_button(
+        "💻 GitHub Repository",
+        "https://github.com/karw-gif/NovaMedix-.git"
+    )
 
 st.divider()
 
@@ -440,23 +439,17 @@ st.markdown("""
 <h2>📱 CampusConnect</h2>
 
 <p>
-
 CampusConnect is a mobile application built with Kotlin that enhances
 communication and engagement within universities by delivering
 real-time campus events and notifications.
-
 </p>
 
 </div>
 """, unsafe_allow_html=True)
 
-col1, col2 = st.columns([1,1])
+st.subheader("Core Features")
 
-with col1:
-
-    st.subheader("Core Features")
-
-    st.markdown("""
+st.markdown("""
 
 📅 Event Management
 
@@ -470,11 +463,9 @@ with col1:
 
 """)
 
-with col2:
+st.subheader("Technology Stack")
 
-    st.subheader("Technology Stack")
-
-    st.markdown("""
+st.markdown("""
 
 - Kotlin
 
