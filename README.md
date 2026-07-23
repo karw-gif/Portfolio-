@@ -1,4 +1,4 @@
-# Joy Mwenda - Streamlit Portfolio
+# Portfolio
 
 This is a beautiful, professional, and interactive portfolio application built using Streamlit and custom CSS styling.
 
